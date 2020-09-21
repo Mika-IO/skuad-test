@@ -1,10 +1,8 @@
-# **Teste técnico proposto**
+# **Desafio**
 
-### **Link dos arquivos CSV**
-http://dados.cvm.gov.br/dados/FI/DOC/INF_DIARIO/DADOS/ 
+(Link dos arquivos CSV)[!http://dados.cvm.gov.br/dados/FI/DOC/INF_DIARIO/DADOS/] 
 
-### **O dicionário dos Dados CSV** 
-http://dados.cvm.gov.br/dados/FI/DOC/INF_DIARIO/META/meta_inf_diario_fi.txt
+(Dicionário dos Dados CSV)![http://dados.cvm.gov.br/dados/FI/DOC/INF_DIARIO/META/meta_inf_diario_fi.txt]
 
 ## ***Exercício 1***
 Escreva um script em python que faça o download de um arquivo CSV, e salve em um diretório local. 
@@ -27,6 +25,27 @@ Este script deverá receber como parâmetros:
 
 O script deverá calcular os valores para cada CNPJ se uma lista de CNPJs for passada por parâmetro. Caso nenhum CNPJ seja informado, o script deverá gerar um relatório de todos os fundos disponíveis.
 
+# **TODO**
+
+> Documentar problema :heavy_check_mark:
+
+> Configurar ambiente :heavy_check_mark:
+
+> Script1 código inicial :heavy_check_mark:
+
+> Script2 código inicial :warning:
+
+> API código inicial :warning:
+
+> Escrever testes :heavy_check_mark:
+
+> Refatorar Script1 :heavy_check_mark:
+
+> Refatorar Script2 :warning:
+
+> Refatorar API :warning:
+
+> Documentar Solução :warning:
 
 # **Iniciando o projeto** 
 
