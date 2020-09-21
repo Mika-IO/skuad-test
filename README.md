@@ -9,12 +9,12 @@
 
 [Dicionário dos Dados CSV](http://dados.cvm.gov.br/dados/FI/DOC/INF_DIARIO/META/meta_inf_diario_fi.txt)
 
-## ***Exercício 1***
+## ***Exercício 1*** :hammer_and_wrench:
 Escreva um script em python que faça o download de um arquivo CSV, e salve em um diretório local. 
 
 O script deverá receber **dois parâmetros**: *o diretório onde o arquivo deverá ser salvo, e um mês específico no formato YYYYMM.*
 
-## ***Exercício 2***
+## ***Exercício 2*** :hammer_and_wrench:
 A partir dos arquivos obtidos no exercício anterior, faça um script que gere um relatório contendo:
 
 - A porcentagem de variação do valor da cota.
@@ -30,7 +30,7 @@ Este script deverá receber como parâmetros:
 
 O script deverá calcular os valores para cada CNPJ se uma lista de CNPJs for passada por parâmetro. Caso nenhum CNPJ seja informado, o script deverá gerar um relatório de todos os fundos disponíveis.
 
-# **TODO**
+# **TODO** :pushpin:
 
 > Documentar problema :heavy_check_mark:
 
@@ -50,7 +50,7 @@ O script deverá calcular os valores para cada CNPJ se uma lista de CNPJs for pa
 
 > Revisar documentação :warning:
 
-# **Iniciando o projeto** 
+# **Iniciando o projeto** :rocket:
 
 ## **Docker**
 
@@ -68,11 +68,11 @@ O script deverá calcular os valores para cada CNPJ se uma lista de CNPJs for pa
     python script02.py YYYYMM <diretório> CNPJ0 CNPJ1 CNPJ2 CNPJ3
 
 
-## **Testes**
+## **Testes** :label:
 
     Implementar depois de definir todo escopo do código
 
-# **Bônus**
+# **Bônus** :checkered_flag:
 
 ### Ao executar
 
