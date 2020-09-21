@@ -35,15 +35,13 @@ O script deverá calcular os valores para cada CNPJ se uma lista de CNPJs for pa
 
 > Script2 código inicial :warning:
 
-> API código inicial :warning:
-
 > Escrever testes :warning:
 
 > Refatorar Script1 :warning:
 
 > Refatorar Script2 :warning:
 
-> Refatorar API :warning:
+> API Bônus:warning:
 
 > Revisar documentação :warning:
 
