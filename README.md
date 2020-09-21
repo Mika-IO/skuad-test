@@ -1,8 +1,8 @@
 # **Desafio**
 
-(Link dos arquivos CSV)[!http://dados.cvm.gov.br/dados/FI/DOC/INF_DIARIO/DADOS/] 
+[Link dos arquivos CSV](http://dados.cvm.gov.br/dados/FI/DOC/INF_DIARIO/DADOS/)
 
-(Dicionário dos Dados CSV)![http://dados.cvm.gov.br/dados/FI/DOC/INF_DIARIO/META/meta_inf_diario_fi.txt]
+[Dicionário dos Dados CSV](http://dados.cvm.gov.br/dados/FI/DOC/INF_DIARIO/META/meta_inf_diario_fi.txt)
 
 ## ***Exercício 1***
 Escreva um script em python que faça o download de um arquivo CSV, e salve em um diretório local. 
@@ -37,15 +37,15 @@ O script deverá calcular os valores para cada CNPJ se uma lista de CNPJs for pa
 
 > API código inicial :warning:
 
-> Escrever testes :heavy_check_mark:
+> Escrever testes :warning:
 
-> Refatorar Script1 :heavy_check_mark:
+> Refatorar Script1 :warning:
 
 > Refatorar Script2 :warning:
 
 > Refatorar API :warning:
 
-> Documentar Solução :warning:
+> Revisar documentação :warning:
 
 # **Iniciando o projeto** 
 
