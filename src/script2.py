@@ -6,6 +6,19 @@ from script1 import templating, flow_definer, require_data
 from pathlib import Path
 import csv
 
+'''
+
+Ler o arquivo CSV
+
+RETORNAR relatório:
+    A porcentagem de variação do valor da cota.
+    
+    O valor captado entre o primeiro e último dia disponível de um mês específico.
+
+    O valor resgatado de um fundo entre o primeiro e último dia disponível de um mês específico.
+
+
+'''
 
 def read_data(directory, period):
     '''
