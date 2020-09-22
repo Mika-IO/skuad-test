@@ -52,11 +52,17 @@ O script deverá calcular os valores para cada CNPJ se uma lista de CNPJs for pa
 
 # :rocket: **Iniciando o projeto** 
 
-## **Docker**
+### Clone o projeto
+
+    # Clone o projeto do Github
+    git clone https://github.com/Mika-IO/skuad-test
+
+    # Entre na pasta do projeto
+    cd skuad-test
 
 ### Crie seu container e execute os scripts
 
-    # Cria o container
+    # Crie o container
     docker build -t py-container . 
 
     # Entre no contexto do container
@@ -65,7 +71,8 @@ O script deverá calcular os valores para cada CNPJ se uma lista de CNPJs for pa
     # Execute o scripts 
     python script01.py <diretório> YYYYMM
 
-    python script02.py YYYYMM <diretório> CNPJ0 CNPJ1 CNPJ2 CNPJ3
+    python script02.py YYYYMM <diretório> CNPJ0 CNPJ1 CNPJ2 CNPJ3 
+    
 
 
 ## :label: **Testes** 

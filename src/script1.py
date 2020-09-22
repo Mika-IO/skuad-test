@@ -4,7 +4,7 @@ import sys
 from tqdm import tqdm
 
 
-def templating_url(period):
+def templating(period):
     '''
         Retorna o nome do Arquivo CSV e a url do arquivo
     '''
@@ -17,8 +17,8 @@ def require_data():
     '''
         Retorna as entradas do usuário, os paramêtros (directory, period)
     '''
-    print('########## Entre com os parâmetros ##########')
-    directory = input('\nDigite o caminho onde será salvo o CSV: ')
+    print('\n########## Entre com os parâmetros ##########')
+    directory = input('\nDigite o caminho para o arquivo CSV: ')
     period = input('\nDigite o período do arquivo CSV no formato YYYYMM: ')
     return directory, period
 
@@ -27,7 +27,8 @@ def stream_data(directory, period):
     '''
         Realiza o download e salva o arquivo no caminho escolhido
     '''
-    url, file_name = templating_url(period)
+    url, file_name = templating(period)
+    print(f'\nDownloading {file_name}\n')
     response = requests.get(url, stream=True)
     file_size = int(response.headers.get('content-length', 0))
     block_size = 4096
@@ -47,19 +48,18 @@ def stream_data(directory, period):
         print('\nAlgo deu errado!!')
 
 
-def main(parameters):
+def flow_definer(parameters, data_handle):
     '''
-        Fluxo principal
-        Define o fluxo de acordo com os paramêtros passados para o script
+        Define o fluxo de acordo com os paramêtros passados para o script ou não
     '''
     if not parameters[1:]:
         directory, period = require_data()
-        stream_data(directory, period)
+        data_handle(directory, period)
     else:
         directory = str(parameters[1])
         period = str(parameters[2])
-        stream_data(directory, period)
+        data_handle(directory, period)
 
 
 if __name__ == "__main__":
-    main(sys.argv)
+    flow_definer(sys.argv, stream_data)
