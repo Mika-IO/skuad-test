@@ -7,7 +7,7 @@ COPY requirements.txt ./
 COPY src/script1.py ./
 COPY src/script2.py ./
 COPY src/api.py ./
-COPY src/test_scripts ./
+COPY src/test_scripts.py ./
 COPY setup.cfg ./
 
 RUN pip install --upgrade pip

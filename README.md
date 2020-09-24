@@ -84,6 +84,15 @@ O script deverá calcular os valores para cada CNPJ se uma lista de CNPJs for pa
     # Consulte o relatório dos testes em
     tests_relatory/tests_report.html
 
+    # OBS: Para praticidade execute os testes numa virtualenv ou ambiente python global
+
+    # Crie uma virtualenv
+    pip install virtualenv
+    virtualenv env .
+    source env/bin/activate
+    # Instale as dependências na sua virtualenv e seu ambiente está pronto
+    pip install -r requirements.txt
+
 # :checkered_flag: **Bônus** 
 
 ### Ao executar
