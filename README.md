@@ -75,14 +75,14 @@ O script deverá calcular os valores para cada CNPJ se uma lista de CNPJs for pa
 
 ## :label: **Testes** 
 
-    # Na pasta /src do projeto digite
+    # Na raiz do projeto digite
     pytest 
 
     # Para resposta verbosa
-    pytest /test -v
+    pytest -v
 
     # Consulte o relatório dos testes em
-    src/tests_relatory/tests_report.html
+    tests_relatory/tests_report.html
 
 # :checkered_flag: **Bônus** 
 
