@@ -4,7 +4,7 @@ import sys
 from tqdm import tqdm
 
 
-def templating(period):
+def templating(period: str ) -> tuple:
     '''
         Retorna o nome do Arquivo CSV e a url do arquivo
     '''
@@ -13,7 +13,7 @@ def templating(period):
     return url, name
 
 
-def require_data():
+def require_data() -> tuple:
     '''
         Retorna as entradas do usuário, os paramêtros (directory, period)
     '''
