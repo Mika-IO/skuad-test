@@ -40,7 +40,7 @@ O script deverá calcular os valores para cada CNPJ se uma lista de CNPJs for pa
 
 > Script2 código inicial :heavy_check_mark:
 
-> Refatorar e escrever testes :heavy_check_mark:
+> Refatorar e configurar testes :heavy_check_mark:
 
 > API Bônus :warning:
 

@@ -16,13 +16,23 @@ def templating(period: str ) -> tuple:
 def require_data() -> tuple:
     '''
         Retorna as entradas do usuário, os paramêtros (directory, period)
-    '''
-    print('\n########## Entre com os parâmetros ##########')
-    directory = input('\nDigite o caminho para o arquivo CSV: ')
-    period = input('\nDigite o período do arquivo CSV no formato YYYYMM: ')
+    '''  
+    print('\n############################################')  
+    print('######     Entre com os parâmetros     ######')
+    print('###### para realizar o download do csv ######')
+    print('############################################\n')
+    while True:
+        directory = str(input('\nDigite o caminho onde salvar o arquivo: '))
+        period = str(input('\nDigite o período no formato YYYYMM: '))
+        if len(period) == 6:                
+            break
+        else:
+                print('\nO caminho tem que ser um diretório\n')
+                print('E o periodo tem que ser YYYYMM\n')
+                print('TENTE NOVAMENTE')
     return directory, period
-
-
+        
+    
 def stream_data(directory, period):
     '''
         Realiza o download e salva o arquivo no caminho escolhido
@@ -46,20 +56,21 @@ def stream_data(directory, period):
         print('\nDownload complete') if file_size != 0 else print('\nDownload error')
     except:
         print('\nAlgo deu errado!!')
+    return f'{directory}/{file_name}'
 
 
-def flow_definer(parameters, data_handle):
+def flow_definer(parameters):
     '''
         Define o fluxo de acordo com os paramêtros passados para o script ou não
     '''
     if not parameters[1:]:
         directory, period = require_data()
-        data_handle(directory, period)
+        return stream_data(directory, period)
     else:
         directory = str(parameters[1])
         period = str(parameters[2])
-        data_handle(directory, period)
-
+        return stream_data(directory, period)
+    
 
 if __name__ == "__main__":
-    flow_definer(sys.argv, stream_data)
+    flow_definer(sys.argv)
