@@ -68,7 +68,7 @@ O script deverá calcular os valores para cada CNPJ se uma lista de CNPJs for pa
     python script01.py <diretório> YYYYMM
 
     python script02.py <diretório> YYYYMM
-    
+
     python script02.py <diretório> YYYYMM CNPJ0 CNPJ1 CNPJ2 CNPJ3 
     
 
@@ -88,5 +88,5 @@ O script deverá calcular os valores para cada CNPJ se uma lista de CNPJs for pa
     # API
     localhost:8080
 
-    # DOCS
+    # DOCUMENTAÇÃO DA API
     localhost:8080/docs
