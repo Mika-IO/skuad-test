@@ -38,17 +38,13 @@ O script deverá calcular os valores para cada CNPJ se uma lista de CNPJs for pa
 
 > Script1 código inicial :heavy_check_mark:
 
-> Script2 código inicial :warning:
+> Script2 código inicial :heavy_check_mark:
 
-> Escrever testes :warning:
-
-> Refatorar Script1 :warning:
-
-> Refatorar Script2 :warning:
+> Refatorar e escrever testes :warning:
 
 > API Bônus:warning:
 
-> Revisar documentação :warning:
+> Revisar documentação :heavy_check_mark:
 
 # :rocket: **Iniciando o projeto** 
 
@@ -71,7 +67,9 @@ O script deverá calcular os valores para cada CNPJ se uma lista de CNPJs for pa
     # Execute o scripts 
     python script01.py <diretório> YYYYMM
 
-    python script02.py YYYYMM <diretório> CNPJ0 CNPJ1 CNPJ2 CNPJ3 
+    python script02.py <diretório> YYYYMM
+    
+    python script02.py <diretório> YYYYMM CNPJ0 CNPJ1 CNPJ2 CNPJ3 
     
 
 
