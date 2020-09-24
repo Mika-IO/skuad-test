@@ -63,7 +63,7 @@ def analize_data(directory, period, *args) -> dict:
                 check = True if (len(args[0])) == 0 else False
                 if check: 
                     print('\nAnalizar o arquivo todo pode demorar...')
-                    print('Use o filtros de CNPJ...\n')
+                    print('Use o filtro de CNPJ...\n')
                 args = all_cnpjs(file) if (len(args[0])) == 0 else args[0]
                 variation_array = []
                 captured_array = []

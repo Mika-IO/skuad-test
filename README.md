@@ -10,11 +10,13 @@
 [Dicionário dos Dados CSV](http://dados.cvm.gov.br/dados/FI/DOC/INF_DIARIO/META/meta_inf_diario_fi.txt)
 
 ## :hammer_and_wrench: ***Exercício 1*** 
+![](assets/script1.gif)
 Escreva um script em python que faça o download de um arquivo CSV, e salve em um diretório local. 
 
 O script deverá receber **dois parâmetros**: *o diretório onde o arquivo deverá ser salvo, e um mês específico no formato YYYYMM.*
 
 ##  :hammer_and_wrench: ***Exercício 2***
+![](assets/script2.gif)
 A partir dos arquivos obtidos no exercício anterior, faça um script que gere um relatório contendo:
 
 - A porcentagem de variação do valor da cota.
