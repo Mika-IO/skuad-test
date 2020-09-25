@@ -102,6 +102,8 @@ O script deverá calcular os valores para cada CNPJ se uma lista de CNPJs for pa
 
 # :checkered_flag: **Bônus** 
 
+![](assets/api.gif)
+
 ### Ao executar
 
     docker run -it py-container
@@ -109,7 +111,7 @@ O script deverá calcular os valores para cada CNPJ se uma lista de CNPJs for pa
 ### Uma API com funcionalidades semelhantes aos scripts do desafio é servida em
 
     # API
-    localhost:8080
+    http://127.0.0.1:8000
 
     # DOCUMENTAÇÃO DA API
-    localhost:8080/docs
+    http://127.0.0.1:8000/docs
