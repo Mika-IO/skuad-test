@@ -2,7 +2,7 @@
     <h1>Desafio</h1>
     <img src='https://img.shields.io/badge/python-3.7.3-blue'></img>
     <img src='https://img.shields.io/github/license/Mika-IO/skuak-test'></img>
-    <img src='https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FMLevanto'></img>
+    <img src='https://img.shields.io/badge/pandas-1.1.2-blue></img>
 </div>
 
 [Link dos arquivos CSV](http://dados.cvm.gov.br/dados/FI/DOC/INF_DIARIO/DADOS/)
@@ -44,7 +44,7 @@ O script deverá calcular os valores para cada CNPJ se uma lista de CNPJs for pa
 
 > Refatorar e configurar testes :heavy_check_mark:
 
-> API Bônus :warning:
+> API Bônus :heavy_check_mark:
 
 > Revisar documentação :heavy_check_mark:
 
