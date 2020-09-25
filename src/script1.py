@@ -2,6 +2,7 @@
 import requests
 import sys
 from tqdm import tqdm
+from random import randint
 
 
 def templating(period: str) -> tuple:
@@ -33,11 +34,13 @@ def require_data() -> tuple:
     return directory, period
 
 
-def stream_data(directory, period):
+def stream_data(directory, period, id=''):
     '''
         Realiza o download e salva o arquivo no caminho escolhido
     '''
     url, file_name = templating(period)
+    if type(id) == int:
+        file_name = f'{id} -- {file_name}'
     print(f'\nDownloading {file_name}\n')
     response = requests.get(url, stream=True)
     file_size = int(response.headers.get('content-length', 0))

@@ -46,9 +46,9 @@ def quota_price_variation(first_month_price, last_month_price) -> float:
 def analize_data(directory, period, *args) -> dict:
     '''
         Realiza a analize do arquivo no caminho escolhido
-    '''
+    '''   
     file_name = templating(period)[1]
-    try:
+    if True:
         path = Path(f'{directory}/{file_name}')
         if path.is_file():
             path = f'{directory}/{file_name}'
@@ -105,7 +105,7 @@ def analize_data(directory, period, *args) -> dict:
                 return data_result
         else:
             print('\nArquivo não econtrado')
-    except:
+    else:
         print('\nAlgo deu errado!!')
 
 
