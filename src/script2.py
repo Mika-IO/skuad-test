@@ -48,7 +48,7 @@ def analize_data(directory, period, *args) -> dict:
         Realiza a analize do arquivo no caminho escolhido
     '''
     file_name = templating(period)[1]
-    if True:
+    try:
         path = Path(f'{directory}/{file_name}')
         if path.is_file():
             path = f'{directory}/{file_name}'
@@ -61,14 +61,17 @@ def analize_data(directory, period, *args) -> dict:
                     'RESG_DIA'
                     ])
                 check = True if (len(args[0])) == 0 else False
-                if check: 
+                if check:
                     print('\nAnalizar o arquivo todo pode demorar...')
                     print('Use o filtro de CNPJ...\n')
                 args = all_cnpjs(file) if (len(args[0])) == 0 else args[0]
                 variation_array = []
                 captured_array = []
                 rescue_array = []
-                progress_bar = tqdm(total=int(len(args)), desc=f'Analizando CSV')
+                progress_bar = tqdm(
+                    total=int(len(args)),
+                    desc=f'Analizando CSV'
+                )
                 for arg in args:
                     progress_bar.update(1)
                     fund = file.loc[file['CNPJ_FUNDO'] == arg]
@@ -102,7 +105,7 @@ def analize_data(directory, period, *args) -> dict:
                 return data_result
         else:
             print('\nArquivo não econtrado')
-    else:
+    except:
         print('\nAlgo deu errado!!')
 
 
@@ -174,8 +177,11 @@ def flow_definer(parameters):
         directory = str(parameters[1])
         period = str(parameters[2])
         args = parameters[3:]
-        relatory = analize_data(directory, period, args)
-        make_html(directory, period, relatory)
+        try:
+            relatory = analize_data(directory, period, args)
+            make_html(directory, period, relatory)
+        except:
+            print('Algo deu errado')
 
 
 if __name__ == "__main__":

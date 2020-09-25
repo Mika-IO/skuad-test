@@ -4,7 +4,7 @@ import sys
 from tqdm import tqdm
 
 
-def templating(period: str ) -> tuple:
+def templating(period: str) -> tuple:
     '''
         Retorna o nome do Arquivo CSV e a url do arquivo
     '''
@@ -16,23 +16,23 @@ def templating(period: str ) -> tuple:
 def require_data() -> tuple:
     '''
         Retorna as entradas do usuário, os paramêtros (directory, period)
-    '''  
-    print('\n############################################')  
+    '''
+    print('\n############################################')
     print('######     Entre com os parâmetros     ######')
     print('###### para realizar o download do csv ######')
     print('############################################\n')
     while True:
         directory = str(input('\nDigite o caminho onde salvar o arquivo: '))
         period = str(input('\nDigite o período no formato YYYYMM: '))
-        if len(period) == 6:                
+        if len(period) == 6:
             break
         else:
                 print('\nO caminho tem que ser um diretório\n')
                 print('E o periodo tem que ser YYYYMM\n')
                 print('TENTE NOVAMENTE')
     return directory, period
-        
-    
+
+
 def stream_data(directory, period):
     '''
         Realiza o download e salva o arquivo no caminho escolhido
@@ -70,7 +70,7 @@ def flow_definer(parameters):
         directory = str(parameters[1])
         period = str(parameters[2])
         return stream_data(directory, period)
-    
+
 
 if __name__ == "__main__":
     flow_definer(sys.argv)
