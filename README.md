@@ -2,7 +2,7 @@
     <h1>Desafio</h1>
     <img src='https://img.shields.io/badge/python-3.7.3-blue'></img>
     <img src='https://img.shields.io/github/license/Mika-IO/skuak-test'></img>
-    <img src='https://img.shields.io/badge/pandas-1.1.2-blue></img>
+    <img src='https://img.shields.io/badge/pandas-1.1.2-blue'></img>
 </div>
 
 [Link dos arquivos CSV](http://dados.cvm.gov.br/dados/FI/DOC/INF_DIARIO/DADOS/)
