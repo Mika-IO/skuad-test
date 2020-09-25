@@ -2,6 +2,8 @@ FROM python:3
 
 WORKDIR /usr/src/app
 
+EXPOSE 8080
+
 # Colocando os arquivos python no container
 COPY requirements.txt ./
 COPY src/script1.py ./
@@ -13,4 +15,4 @@ COPY setup.cfg ./
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD [ "uvicorn", "api:app" ]
+CMD ["uvicorn", "api:app", "--host"]

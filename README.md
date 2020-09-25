@@ -111,7 +111,12 @@ O script deverá calcular os valores para cada CNPJ se uma lista de CNPJs for pa
 ### Uma API com funcionalidades semelhantes aos scripts do desafio é servida em
 
     # API
-    http://127.0.0.1:8000
+    172.17.0.2
 
     # DOCUMENTAÇÃO DA API
-    http://127.0.0.1:8000/docs
+    172.17.0.2/docs
+
+    
+    # Caso o endereço do docker seja diferente
+    # Rode dentro do container para descobrir seu endereço
+    ip -4 -o address
